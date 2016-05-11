@@ -1,10 +1,8 @@
 <?php
 try {
-  $host = 'ec2-54-228-219-2.eu-west-1.compute.amazonaws.com';
-  $password = 'wEttOMA42PlEuhmQmdwSOtWZuI';
-  $user='everrsslsbdsjo';
-  $name_bd = 'd33bqbai8cac73';
-  $dbh = new PDO("pgsql:host=".$host.";dbname=".$name_bd.",".$user.",".$password."");
+
+  $dbh = new PDO("pgsql:host="ec2-54-228-219-2.eu-west-1.compute.amazonaws.com";
+  dbname="d33bqbai8cac73","5432","everrsslsbdsjo","wEttOMA42PlEuhmQmdwSOtWZuI"");
   //echo "PDO connection object created";
   $dbh->prepare("SELECT * FROM event");
   $dbh->execute();
