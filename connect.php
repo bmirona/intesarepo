@@ -4,7 +4,7 @@ try {
   //echo "PDO connection object created";
   $dbh->prepare("SELECT * FROM event");
   $dbh->execute();
-  $test=$dbh->fetchAll(PDO::FETCH_ASSOC);
+  $test=$dbh->fetch(PDO::FETCH_ASSOC);
   print_r($test);
 }
 catch(PDOException $e) {
