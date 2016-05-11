@@ -18,13 +18,13 @@
       <img id="img-logo" src="./images/logo.png">
       <a id="logo-container" href="#" class="brand-logo black-text"> INTernational Engineering Students Association</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="login.php">Log in</a></li>
-        <li><a href="register.php">Register</a></li>
+        <li><a href="./templates/login.php">Log in</a></li>
+        <li><a href="./templates/register.php">Register</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="login.php">Log in</a></li>
-        <li><a href="register.php">Register</a></li>
+        <li><a href="./templates/login.php">Log in</a></li>
+        <li><a href="./templates/register.php">Register</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -58,7 +58,7 @@
           <h5 class="header col s12 light black-text">Power your future!</h5>
         </div>
         <div class="row center">
-          <a href="register.php" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
+          <a href="./templates/register.php" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
         </div>
         <br><br>
 
