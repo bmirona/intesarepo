@@ -34,7 +34,7 @@
       <h2 class="center light-blue-text"><i class="fa fa-user-plus"></i></h2>
       <h5 class="center grey-text"> Join the international part!</h5>
   </div>
-  <div class="col s12 m4 l2">&nbsp;</div>
+  <div class="col s12 m4 l2"></div>
 </div>
 </div>
 
@@ -42,7 +42,7 @@
   <div class="col s12">
 
     <div class="col s12 m2 l4">
-      &nbsp;
+
     </div>
 
     <div class="col s12 m8 l4">
