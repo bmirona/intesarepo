@@ -4,7 +4,7 @@ try {
   $password = 'wEttOMA42PlEuhmQmdwSOtWZuI';
   $user='everrsslsbdsjo';
   $name_bd = 'd33bqbai8cac73';
-  $dbh = new PDO("pgsql:host=".$host.";dbname=".$name_bd.",".$user.",".$password);
+  $dbh = new PDO("pgsql:host=".$host.";dbname=".$name_bd.",".$user.",".$password."");
   //echo "PDO connection object created";
   $dbh->prepare("SELECT * FROM event");
   $dbh->execute();
