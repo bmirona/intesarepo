@@ -11,6 +11,6 @@
   <link href="./framework/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <? php include("connect.php"); ?>
+  <?php include("connect.php"); ?>
 </body>
 </html>
