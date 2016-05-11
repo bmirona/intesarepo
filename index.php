@@ -16,7 +16,7 @@
   <nav class="#cfd8dc blue-grey lighten-4" role="navigation">
     <div class="nav-wrapper container">
       <img id="img-logo" src="./images/logo.png">
-      <a id="logo-container" href="#" class="brand-logo black-text"> INTernational Engineering Students Association</a>
+      <a id="logo-container" href="#" class="brand-logo black-text responsive"> INTernational Engineering Students Association</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="./templates/login.php">Log in</a></li>
         <li><a href="./templates/register.php">Register</a></li>
