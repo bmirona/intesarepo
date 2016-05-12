@@ -1,18 +1,19 @@
-<?php  ?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>International Engineering Students Association </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+   <title>International Engineering Students Association </title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./framework/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./framework/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <!-- CSS  -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="./framework/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link href="./framework/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <title>International Engineering Students Association </title>
 </head>
-<body class="#b0bec5 blue-grey lighten-3">
+
+<body class="blue-grey lighten-3">
   <nav class="#cfd8dc blue-grey lighten-4" role="navigation">
     <div class="nav-wrapper container">
       <img id="img-logo" src="./images/logo.png">
@@ -29,8 +30,10 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  <main>
 
-  <nav class="#b0bec5 blue-grey lighten-3" role="navigation">
+
+  <nav class="blue-grey lighten-3" role="navigation">
     <div class="nav-wrapper container">
       <ul class="left hide-on-med-and-down">
         <li><a href="#">Home</a></li>
@@ -58,7 +61,7 @@
           <h5 class="header col s12 light black-text">Power your future!</h5>
         </div>
         <div class="row center">
-          <a href="./templates/register.php" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
+          <a href="./modules/register.php" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
         </div>
         <br><br>
 
@@ -132,31 +135,31 @@ With the activities INTESA provides, it creates opportunities for students to re
     </div>
     <div class="parallax"><img src="./images/background2.jpg" alt="Unsplashed background img 3"></div>
   </div>
+</main>
+<!--footer-->
+<footer class="page-footer teal #cfd8dc blue-grey lighten-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="black-text">Parteners</h5>
 
-  <footer class="page-footer teal #cfd8dc blue-grey lighten-4">
+
+
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="black-text">Parteners</h5>
-
-
-
-        </div>
-
-      </div>
+  <!--  Made by--> <a class="black-text " href="http://materializecss.com">Made by Mirona</a>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-    <!--  Made by--> <a class="black-text " href="http://materializecss.com">Made by Mirona</a>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="framework/js/materialize.js"></script>
-  <script src="framework/js/init.js"></script>
-
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="framework/js/materialize.js"></script>
+<script src="framework/js/init.js"></script>
   </body>
 </html>

@@ -11,31 +11,33 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../framework/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../framework/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <title>Log in</title>
 </head>
+
 <body>
   <main>
-  <nav class="blue-grey darken-3" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo white-text"> INTernational Engineering Students Association</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#" class="white-text">Log in</a></li>
-        <li><a href="#" class="white-text">Register</a></li>
-      </ul>
+    <nav class="blue-grey darken-3" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo white-text"> INTernational Engineering Students Association</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="white-text">Log in</a></li>
+            <li><a href="#" class="white-text">Register</a></li>
+          </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="login.html" class="white-text">Log in</a></li>
-        <li><a href="login.html" class="white-text">Register</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="login.html" class="white-text">Log in</a></li>
+            <li><a href="login.html" class="white-text">Register</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
   <div id="div-form" class="container">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">person_pine</i>
           <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">E-mail</label>
+          <label for="icon_prefix">Pseudo</label>
         </div>
         <div class="input-field col s12 ">
           <i class="material-icons prefix">vpn_key</i>
@@ -49,6 +51,7 @@
     </form>
   </div>
 </main>
+
 <footer class="page-footer blue-grey darken-3">
   <div class="container">
     <div class="row">
@@ -69,6 +72,5 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="framework/js/materialize.js"></script>
 <script src="framework/js/init.js"></script>
-
 </body>
 </html>
