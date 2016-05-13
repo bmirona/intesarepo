@@ -62,7 +62,7 @@
         </div>
 
         <div class="col s12 m8 l4">
-        <form class="col s12">
+        <form class="col s12" method="POST" action="../controllers/c_register.php">
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" type="text" class="validate">
@@ -99,7 +99,7 @@
               <label for="email">Email</label>
             </div>
           </div>
-          <div class="row">  <!-- makes sure that they will write smth@smth.st -->
+          <div class="row">
             <div class="input-field col s12">
               <input id="password" type="password" class="validate">
               <label for="password">Password</label>
@@ -110,13 +110,6 @@
               <label for="password">Password Confirmation</label>
             </div>
           </div>
-          <div class="input-field col s12">
-        <select>
-          <option value="" disabled selected>Choose your current status</option> <!-- sa vad cum sa fac, dupa optiune tr sa complete tara sau nu -->
-          <option value="1"> I am erasmus </option>
-          <option value="2"> I am not erasmus</option>
-        </select>
-      </div>
       <button class="btn waves-effect waves-light black lighten-2" type="submit" name="action" id="but">Register
         <i class="material-icons right">send</i>
       </button>

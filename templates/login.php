@@ -1,4 +1,4 @@
-<?php ?>
+<?php include("../controllers/cookie.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,17 +32,18 @@
         </div>
       </nav>
   <div id="div-form" class="container">
-    <form class="col s12">
+    <form class="col s12" action="../functions/login_ok.php" method="POST">
       <div class="row">
-        <div class="input-field col s12">
+        <div class=" input-field col s12">
           <i class="material-icons prefix">person_pine</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Pseudo</label>
+
+          <input id="pseudo" type="text" class="validate">
+          <label for="pseudo">pseudo</label>
         </div>
         <div class="input-field col s12 ">
           <i class="material-icons prefix">vpn_key</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Password</label>
+          <input id="password" type="password" class="validate">
+          <label for="password">password</label>
         </div>
       </div>
       <button class="btn waves-effect waves-light black lighten-2" type="submit" name="action" id="but">Log in
