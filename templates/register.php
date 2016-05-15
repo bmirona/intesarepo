@@ -1,4 +1,4 @@
-<?php ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,28 +15,31 @@
   <title>Register</title>
 </head>
 
-<body class="grey lighten-5">
+<body background="../images/backgr.jpg">
   <main>
-    <nav class="blue-grey darken-3" role="navigation">
+    <nav class="blue-grey lighten-4" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo"> INTernational Engineering Students Association</a>
+          <a id="logo-container" href="#" class="brand-logo black-text"> INTESA</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Log in</a></li>
+            <li><a href="../index.php" class="black-text">Home</a></li>
+            <li><a href="login.php" class="black-text">Log in</a></li>
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Log in</a></li>
+            <li><a href="../index.php" class="black-text">Home</a></li>
+            <li><a href="login.php" class="black-text">Log in</a></li>
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
       </nav>
 
+<main>
   <div class="row">
   <div class="col s12 m4 l2">&nbsp;</div>
   <div class="col s12 m4 l8">
     <div class="icon-block">
       <h2 class="center light-blue-text"><i class="fa fa-user-plus"></i></h2>
-      <h5 class="center grey-text"> Join the international part!</h5>
+      <h5 class="center black-text"> Join the international part!</h5>
   </div>
   <div class="col s12 m4 l2"></div>
 </div>
@@ -60,29 +63,30 @@
         <div class="col s12 m2 l4">
           &nbsp;
         </div>
-
-        <div class="col s12 m8 l4">
-        <form class="col s12" method="POST" action="../controllers/c_register.php">
+<!--<input value="pseudo" id="pseudo" type="text" name="pseudo" class="validate">
+<label for="pseudo" class="active" name="pseudo">pseudo</label>-->
+       <div class="col s12 m8 l4">
+        <form class="col s12" method="post" action="../controllers/c_newregister.php">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
+              <input value="FirstName" id="firstname" type="text" required name="firstname" class="validate" pattern='.{0,20}'>
+              <label for="firstname" class="active" name="firstname">First Name</label>
             </div>
             <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
+              <input value="LastName" id="lastname" type="text" required name="lastname" class="validate"  pattern='.{0,20}'>
+              <label for="lastname" class="active" name="lastname">Last Name</label>
             </div>
             <div class="input-field col s12">
-              <input id="pseudo" type="text" class="validate">
-              <label for="pseudo">Choose a pseudo</label>
+              <input value="Pseudo" id="pseudo" type="text" required name="pseudo" class="validate">
+              <label for="pseudo" class="active" name="pseudo">Choose a pseudo</label>
             </div>
             <div class="input-field col s12">
-              <input id="country_origin" type="text" class="validate">
-              <label for="country_origin">Country of origin</label>
+              <input value="Country" id="country_origin" type="text" required name="origin_country" class="validate" pattern='.{0,20}'>
+              <label for="country_origin" class="active" name="origin_country">Country of origin</label>
             </div>
             <div class="input-field col s12">
-              <input id="commitee" type="text" class="validate">
-              <label for="commitee">Commitee</label>
+              <input value="Commitee" id="commitee" type="text" required name="commitee" class="validate" pattern='.{0,20}'>
+              <label for="commitee" class="active" name="commitee">Commitee</label>
             </div>
             <div class="row">
               <label>Gender</label>
@@ -95,19 +99,19 @@
         </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
+              <input value="E-mail" id="email" type="email" required name="email" class="validate" pattern='.{0,20}'>
+              <label for="email" class="active" name="email">Email</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
-              <label for="password">Password</label>
+              <input  id="password" type="password" required name="password" class="validate" pattern='.{5,20}'>
+              <label for="password" class="active" name="password">Password</label>
             </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
-              <label for="password">Password Confirmation</label>
+              <input  id="password_conf" type="password" required name="password_conf" class="validate" pattern='.{5,20}'>
+              <label for="password_conf" class="active" name="password_conf">Password Confirmation</label>
             </div>
           </div>
       <button class="btn waves-effect waves-light black lighten-2" type="submit" name="action" id="but">Register
@@ -118,14 +122,13 @@
   </div>
   </div>
 </div>
+
 </main>
-<footer class="page-footer blue-grey darken-3">
+<footer class="page-footer blue-grey lighten-4">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="black-text">ONG's Parteners </h5>
-
-
 
         </div>
 
@@ -136,14 +139,14 @@
     <!--  Made by--> <a class="black-text " href="http://materializecss.com">Made by Mirona</a>
       </div>
     </div>
-  </footer>
+
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="framework/js/materialize.js"></script>
   <script src="framework/js/init.js"></script>
-
+</footer>
 
   </body>
 </html>

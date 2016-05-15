@@ -56,11 +56,18 @@ footer.page-footer {
 }
 
 #div-form {
-  margin-top:100px;
+  margin-top:70px;
   margin-left: 100px;
 }
 
 #img-logo {
-  height:50px;
-  width:70px;
+  height:60px;
+  width:80px;
+  margin-left: 100px;
+  padding-top: 5px;
+}
+
+#div-admin{
+  padding-top: 100px;
+
 }

@@ -1,15 +1,10 @@
 <?php
 
-	function create_memeber($firstname,$lastname,$gender,$password,$email,$pseudo){
+	function create_member($firstname,$lastname,$password,$email,$pseudo,$commitee, $isAdmin){
 		global $bdd;
-		$request = $bdd->prepare('INSERT INTO utilisateur(firstName, lastName, gender, password, email, pseudo, isAdmin) VALUES(?,?,?,?,?,?,?)');
-		$request->execute(array ($firstname,$lastname,$gender,$password,$email,$pseudo,Member));
+		$request = $bdd->prepare('INSERT INTO utilisateur(firstName, lastName, password, email, pseudo,commitee, isAdmin) VALUES(?,?,?,?,?,?,?)');
+		$request->execute(array ($firstname,$lastname,$password,$email,$pseudo,$commitee,'member'));
 		return 0;
 	}
-	function create_admin($firstname,$lastname,$gender,$password,$email,$pseudo){
-		global $bdd;
-		$request = $bdd->prepare('INSERT INTO utilisateur(firstName, lastName, gender, password, email, pseudo, isAdmin) VALUES(?,?,?,?,?,?,?)');
-		$request->execute(array ($firstname,$lastname,$gender,$password,$email,$pseudo,Admin));
-		return 0;
-	}
+
 ?>

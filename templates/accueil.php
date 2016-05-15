@@ -17,15 +17,15 @@
 <body class="#b0bec5 blue-grey lighten-3">
   <nav class="#cfd8dc blue-grey lighten-4" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"> INTernational Engineering Students Association</a>
+      <a id="logo-container" href="../index.php" class="brand-logo">INTESA</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Log Out</a></li>
+        <li><a href="../controllers/signout.php">Log Out</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Log Out</a></li>
+        <li><a href="../controllers/signout.php">Log Out</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="../index.php" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
@@ -52,12 +52,12 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center black-text text-lighten-2">INTESA</h1>
+        <h1 class="header center black-text text-lighten-2"> INTernational Engineering Students Association</h1>
         <div class="row center">
           <h5 class="header col s12 light black-text">Power your future!</h5>
         </div>
         <div class="row center">
-          <a href="register.html" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
+          <a href="register.html" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Check the event list</a>
         </div>
         <br><br>
         </div>

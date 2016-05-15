@@ -1,21 +1,30 @@
 <?php
 	    require('../local_connect.php');
-		include_once('../functions/sf_register.php');
-		if(isset($_POST['last_name']) AND isset($_POST['first_name']) AND isset($_POST['pseudo']) AND isset($_POST['gender']) AND isset($_POST['email']) AND isset($_POST['password']) AND isset($_POST['country_origin']) AND isset($_POST['commitee'])){
-			$lastname =htmlentities($_POST['last_name'],ENT_QUOTES);
-		  $firstname =htmlentities($_POST['first_name'],ENT_QUOTES);
-		  $pseudo = htmlentities($_POST['pseudo'],ENT_QUOTES);
-			$password = sha1(htmlentities($_POST['password'],ENT_QUOTES));
+		  include('../functions/f_register.php');
+    	include("../functions/login_ok.php");
+
+		 if(isset($_POST['firstName']) AND isset($_POST['lastName']) AND isset($_POST['password']) AND isset($_POST['email']) AND isset($_POST['pseudo']) AND isset($_POST['commitee']) ){
+			$firstName =htmlentities($_POST['firstName'],ENT_QUOTES);
+		  $lastName =htmlentities($_POST['lastName'],ENT_QUOTES);
+			$password = htmlentities($_POST['password'],ENT_QUOTES);
 			$email =htmlentities($_POST['email'],ENT_QUOTES);
-      $gender =htmlentities($_POST['gender'],ENT_QUOTES);
-			$result = create_member($firstname,$lastname,$gender,$password,$email,$pseudo);
-			if ($result==0){
-				header('Location: ../templates/login.php');
+			$pseudo = htmlentities($_POST['pseudo'],ENT_QUOTES);
+			$commitee = htmlentities($_POST['commitee'],ENT_QUOTES);
+
+			$result = create_member($firstName,$lastName,$password,$email,$pseudo,$commitee);
+      if ($result!=0){
+			echo "L' inscription n'a pas fonctionné";
+			//verifie que le pseudo n'existe pas déjà
+			$table=verifPseudo($pseudo);
+			if ($table[0]!=0){
+				echo 'Le pseudo existe déjà, veuillez le changer ou vérifier si cet adhérent est déjà inscrit';
 			}
-			else{
-				echo "Error, please try again";
-				sleep(2);
-				header('Location: ../templates/register.php ');
-			}
+			header("Location: ../templates/register.php");
+		} else{
+			echo "L'inscription a bien été effectué";
+			header("Location: ../templates/accueil.php");
 		}
+	} else{
+		echo "Erreur ! vous n'avez pas rempli tous les champs";
+	}
 ?>

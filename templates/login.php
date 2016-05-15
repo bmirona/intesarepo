@@ -1,4 +1,4 @@
-<?php include("../controllers/cookie.php");?>
+<?php include("../controllers/cookie.php");?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,35 +15,37 @@
 </head>
 
 <body>
-  <main>
-    <nav class="blue-grey darken-3" role="navigation">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo white-text"> INTernational Engineering Students Association</a>
+    <nav class="blue-grey darken-3">
+        <div class="nav-wrapper container" role="navigation">
+          <a id="logo-container" href="index.php" class="brand-logo white-text"> INTESA</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#" class="white-text">Log in</a></li>
-            <li><a href="#" class="white-text">Register</a></li>
+            <li><a href="../index.php" class="white-text">Home</a></li>
+            <li><a href="login.php" class="white-text">Log in</a></li>
+            <li><a href="register.php" class="white-text">Register</a></li>
           </ul>
 
-          <ul id="nav-mobile" class="side-nav">
+          <ul id="nav-mobile" class="side-nav blue-grey">
+            <li><a href="../index.php" class="white-text">Home</a></li>
             <li><a href="login.html" class="white-text">Log in</a></li>
             <li><a href="login.html" class="white-text">Register</a></li>
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
       </nav>
-  <div id="div-form" class="container">
-    <form class="col s12" action="../functions/login_ok.php" method="POST">
-      <div class="row">
-        <div class=" input-field col s12">
-          <i class="material-icons prefix">person_pine</i>
+<main>
 
-          <input id="pseudo" type="text" class="validate">
-          <label for="pseudo">pseudo</label>
+ <div id="div-form" class="row">
+    <form class="col s12" action="../controllers/c_login.php" method="post">
+      <div class="row">
+        <div class=" input-field col s9">
+          <i class="material-icons prefix">person_pine</i>
+          <input value="pseudo" id="pseudo" type="text" required name="pseudo" class="validate">
+          <label for="pseudo" class="active" name="pseudo">pseudo</label>
         </div>
-        <div class="input-field col s12 ">
+        <div class="input-field col s9">
           <i class="material-icons prefix">vpn_key</i>
-          <input id="password" type="password" class="validate">
-          <label for="password">password</label>
+          <input value="password" id="password" type="password" required name="password" class="validate">
+          <label for="password" class="active" name="password">password</label>
         </div>
       </div>
       <button class="btn waves-effect waves-light black lighten-2" type="submit" name="action" id="but">Log in
@@ -57,13 +59,13 @@
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="black-text">ONG's Parteners </h5>
+        <h5 class="white-text">ONG's Parteners </h5>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-  <!--  Made by--> <a class="black-text " href="github.com">Made by Mirona</a>
+  <!--  Made by--> <a class="white-text " href="github.com">Made by Mirona</a>
     </div>
   </div>
 </footer>

@@ -14,26 +14,26 @@
 </head>
 
 <body class="blue-grey lighten-3">
-  <nav class="#cfd8dc blue-grey lighten-4" role="navigation">
+  <nav class="blue-grey lighten-4" role="navigation">
     <div class="nav-wrapper container">
-      <img id="img-logo" src="./images/logo.png">
-      <a id="logo-container" href="#" class="brand-logo black-text responsive"> INTernational Engineering Students Association</a>
+      <a id="logo-container" href="index.php" class="brand-logo black-text responsive-text"> INTESA</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="./templates/login.php">Log in</a></li>
         <li><a href="./templates/register.php">Register</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
+      <ul id="mobile-demo" class="side-nav">
         <li><a href="./templates/login.php">Log in</a></li>
         <li><a href="./templates/register.php">Register</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <main>
 
 
   <nav class="blue-grey lighten-3" role="navigation">
+    <div class="col s6">
     <div class="nav-wrapper container">
       <ul class="left hide-on-med-and-down">
         <li><a href="#">Home</a></li>
@@ -50,18 +50,22 @@
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
+  </div>
+  <div class="col s6">
+     <img id="img-logo" src="./images/logo.png" class="center">
+  </div>
   </nav>
 
   <div id="index-banner" class="parallax-container ">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center black-text text-lighten-2">INTESA</h1>
+        <h1 class="header center black-text text-lighten-2">INTernational Engineering Students Association</h1>
         <div class="row center">
           <h5 class="header col s12 light black-text">Power your future!</h5>
         </div>
         <div class="row center">
-          <a href="./modules/register.php" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
+          <a href="templates/register.php" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
         </div>
         <br><br>
 
