@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php include('headerB.php'); ?>
 <body>
   <nav role="navigation">
@@ -7,9 +9,10 @@
     <li role="presentation"><a href="../controllers/signout.php">Log out</a></li>
   </ul>
   </nav>
+
+  <!--content side-->
     <div class="row-fluid">
         <div class="span12">
-
 
 
 

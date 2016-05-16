@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
    <title>International Engineering Students Association </title>
-
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
    <!-- CSS  -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link href="./framework/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -37,22 +37,22 @@
     <div class="nav-wrapper container">
       <ul class="left hide-on-med-and-down">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">For Students</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="./templates/forStudents.php">For Students</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">For Students</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="./templates/forStudents.php">For Students</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </div>
   <div class="col s6">
-     <img id="img-logo" src="./images/logo.png" class="center">
+     <img id="img-logo" src="./images/logo.png" class="center responsive-img">
   </div>
   </nav>
 
@@ -155,7 +155,7 @@ With the activities INTESA provides, it creates opportunities for students to re
   </div>
   <div class="footer-copyright">
     <div class="container">
-  <!--  Made by--> <a class="black-text " href="http://materializecss.com">Made by Mirona</a>
+     <a class="black-text " href="#">© 2016 Mirona BIRZANEANU</a>
     </div>
   </div>
 </footer>

@@ -5,7 +5,10 @@
         //Sécurisation des données saisies
         $pseudo = htmlentities($_POST['pseudo'],ENT_QUOTES);
         $password = htmlentities($_POST['password'],ENT_QUOTES);
-        //On vérifie que le login existe dans la table
+
+        //secure the password
+        $password=sha1($password);
+        //check if is an admin
         $reponse_admin = $bdd->prepare('SELECT isAdmin FROM utilisateur WHERE pseudo = ?');
         $reponse_admin->execute(array($pseudo));
         $droit =  $reponse_admin->fetch();
@@ -19,18 +22,16 @@
                 {
                     echo "Erreur pseudo. Veuillez vous réauthentifier ou vous inscrire";
                     header('Location:../templates/login.php');
-                    //Exception, erreur ou ce que tu désires
-                }
-                else { //Login existant
 
-                    //Séléction du password pour le login saisi
+                }
+                else { //existing login
+
+                    //choose password
                     $conn = $bdd->prepare('SELECT pseudo,password FROM utilisateur WHERE pseudo = ? and password = ?');
                     $conn->execute(array($pseudo,$password));
-                    //$conn -> bindParam('.$pseudo.',$pseudo,PDO::PARAM_STR);
-                    //$conn -> bindParam('.$password.',$password,PDO::PARAM_STR);
                     $donnees = $conn->fetchColumn();
-                    //Je vérifie que le mot de passe correspond
-                    //Si le mot de passe est hashé dans la bdd, il faut appliquer ce hashage à $password dans la vérification ci-dessous
+                    //check if it's the good password
+
                     if ($donnees == true)
                     {
 
@@ -42,7 +43,9 @@
                              echo "c'est un admin";
                              header('Location: ../templates/admin.php');
                             }
-                        setcookie("user",$pseudo,mktime()+(100000),"/");
+
+                        setcookie("user",$pseudo,time()+365*24*3600, null, null, false, true);
+                         echo '<script>alert(\'This site is using cookies :)\');</script>';
                     }
                     else{
                         header('Location: ../templates/login.php');

@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
 
-        <title>Add, Edit, Delete In PHP/MySQL Using PDO</title>
-
+        <title>Edit Page</title>
+         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
         <link href="../framework/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
         <link rel="stylesheet" type="text/css" href="../framework/css/DT_bootstrap.css">
         <link href="../framework/modal/css1/bootstrap1.css" rel="stylesheet" type="text/css" media="screen">

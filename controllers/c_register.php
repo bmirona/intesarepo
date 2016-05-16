@@ -11,10 +11,11 @@
 			$pseudo = htmlentities($_POST['pseudo'],ENT_QUOTES);
 			$commitee = htmlentities($_POST['commitee'],ENT_QUOTES);
 
+			 $password=sha1($password);
 			$result = create_member($firstName,$lastName,$password,$email,$pseudo,$commitee);
       if ($result!=0){
 			echo "L' inscription n'a pas fonctionné";
-			//verifie que le pseudo n'existe pas déjà
+			//check is the pseudo already exists
 			$table=verifPseudo($pseudo);
 			if ($table[0]!=0){
 				echo 'Le pseudo existe déjà, veuillez le changer ou vérifier si cet adhérent est déjà inscrit';
@@ -22,7 +23,7 @@
 			header("Location: ../templates/register.php");
 		} else{
 			echo "L'inscription a bien été effectué";
-			header("Location: ../templates/accueil.php");
+			header("Location: ../templates/login.php");
 		}
 	} else{
 		echo "Erreur ! vous n'avez pas rempli tous les champs";

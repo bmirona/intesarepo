@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
    <title>Register</title>
-
+   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
    <!-- CSS  -->
    <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css' rel='stylesheet'>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,7 +18,7 @@
   <main>
     <nav class="blue-grey lighten-4" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo black-text"> INTESA</a>
+          <a id="logo-container" href="../index.php" class="brand-logo black-text"> INTESA</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="../index.php" class="black-text">Home</a></li>
             <li><a href="login.php" class="black-text">Log in</a></li>
@@ -63,18 +62,17 @@
         <div class="col s12 m2 l4">
           &nbsp;
         </div>
-<!--<input value="pseudo" id="pseudo" type="text" name="pseudo" class="validate">
-<label for="pseudo" class="active" name="pseudo">pseudo</label>-->
+
        <div class="col s12 m8 l4">
-        <form class="col s12" method="post" action="../controllers/c_newregister.php">
+        <form class="col s12" method="post" action="../controllers/c_register.php">
           <div class="row">
             <div class="input-field col s6">
-              <input value="FirstName" id="firstname" type="text" required name="firstname" class="validate" pattern='.{0,20}'>
-              <label for="firstname" class="active" name="firstname">First Name</label>
+              <input value="FirstName" id="firstName" type="text" required name="firstName" class="validate" pattern='.{0,20}'>
+              <label for="firstName" class="active" name="firstName">First Name</label>
             </div>
             <div class="input-field col s6">
-              <input value="LastName" id="lastname" type="text" required name="lastname" class="validate"  pattern='.{0,20}'>
-              <label for="lastname" class="active" name="lastname">Last Name</label>
+              <input value="LastName" id="lastName" type="text" required name="lastName" class="validate"  pattern='.{0,20}'>
+              <label for="lastName" class="active" name="lastName">Last Name</label>
             </div>
             <div class="input-field col s12">
               <input value="Pseudo" id="pseudo" type="text" required name="pseudo" class="validate">
@@ -136,7 +134,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-    <!--  Made by--> <a class="black-text " href="http://materializecss.com">Made by Mirona</a>
+    <!--  Made by--> <a class="black-text " href="#">© 2016 Mirona BIRZANEANU</a>
       </div>
     </div>
 

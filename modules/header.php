@@ -1,20 +1,16 @@
-<header>
-<nav class="blue-grey lighten-4" role="navigation">
-  <div class="nav-wrapper container">
-    <img id="img-logo" src="../images/logo.png">
-    <a id="logo-container" href="#" class="brand-logo black-text flow-text"> INTernational Engineering Students Association</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="../index.php">Home</a></li>
-      <li><a href="./templates/admin.php">Previous Page</a></li>
-      <li><a href="...index.php">Log out</a></li>
-    </ul>
+<body class="blue-grey lighten-3">
+  <nav class="blue-grey lighten-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.php" class="brand-logo black-text responsive-text"> INTESA</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./templates/login.php">Log in</a></li>
+        <li><a href="./templates/register.php">Register</a></li>
+      </ul>
 
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="../index.php">Home</a></li>
-      <li><a href="./templates/admin.php">Previous Page</a></li>
-      <li><a href="...index.php">Log out</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>
-</nav>
-</header>
+      <ul id="mobile-demo" class="side-nav">
+        <li><a href="./templates/login.php">Log in</a></li>
+        <li><a href="./templates/register.php">Register</a></li>
+      </ul>
+    </div>
+  </nav>

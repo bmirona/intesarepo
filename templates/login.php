@@ -1,11 +1,11 @@
-<?php include("../controllers/cookie.php");?> 
+<?php include("../controllers/cookie.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Log in</title>
-
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
   <!-- CSS  -->
   <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
     <nav class="blue-grey darken-3">
         <div class="nav-wrapper container" role="navigation">
-          <a id="logo-container" href="index.php" class="brand-logo white-text"> INTESA</a>
+          <a id="logo-container" href="../index.php" class="brand-logo white-text"> INTESA</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="../index.php" class="white-text">Home</a></li>
@@ -65,7 +65,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-  <!--  Made by--> <a class="white-text " href="github.com">Made by Mirona</a>
+  <!--  Made by--> <a class="white-text " href="github.com">© 2016 Mirona BIRZANEANU</a>
     </div>
   </div>
 </footer>

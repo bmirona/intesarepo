@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php
 include ('headerB.php');
 $ID=$_GET['idCountry'];
